@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Emilio Jose Medrano Cerezo</h1>
+        <p>"La practica hace al Maestro "</p>
+        <!-- Imagen personal-->
+        <img src="img/Emilio.jpg" alt="Emilio Jose Medrano Cerezo" width="150">
+    </header>
+    <nav>
+        <h2>Menu </h2>
+        <ul>
+            <li><a href="#sobre_mi">Sobre Mi</a></li>
+            <li><a href="#interes">Listas de intereses</a></li>
+            <li><a href="#habilidad">Tabla de habilidades</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Sección sobre información personal -->
+        <section id="sobre_mi">
+            <h2>Sobre Mi</h2>
+            <p class="SM">Hola, mi nombre es <mark>Emilio Jose Medrano Cerezo</mark>, tengo 19 años y soy de Ecuador.
+                Actualmente estoy estudiando la carrera de <Strong> Ingenieria en Sistemas de Informacion en la
+                    Universidad
+                    Tecnica de Babahoyo. </Strong>En mi tiempo libre disfruto escuchar música, ver series y pasar tiempo
+                con
+                mis amigos y mi familia. <em>Me gusta conocer lugares nuevos y vivir experiencias que me ayuden a crecer
+                como
+                persona.</em> </p>
+        </section>
+        <!-- Lista de intereses-->
+        <section id="interes">
+            <h2>Listas de intereses</h2>
+            <p class="INT">Estos son algunos de los interes que tengo</p>
+            <ul>
+                <li>Programacion</li>
+                <li>Videojuegos</li>
+                <li>Ensamble de figuras</li>
+            </ul>
+        </section>
+        <!-- Tabla de habilidades con uso correcto de thead, tbody y tfoot -->
+        <section id="habilidad">
+            <h2>Tabla de habilidades</h2>
+            <table border="2">
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <!-- Cuerpo de la tabla -->
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Basico</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Concentracion </td>
+                        <td>Alto</td>
+
+                    </tr>
+                    <tr>
+                        <td>Ingles</td>
+                        <td>Basico</td>
+
+                    </tr>
+                    <tr>
+                        <td>Responsabilidad</td>
+                        <td>Alto</td>
+
+                    </tr>
+
+                </tbody>
+                <!-- Pie de tabla -->
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Estas son algunas de mis habilidades</td>
+                        </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- Sección de contenido multimedia -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <!-- Audio con controles -->
+            <audio controls>
+                <source src="audio/audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        <!-- Formulario de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <!-- Campo de nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <!-- Aqui estoy creando el Gmail-->
+                <!-- Campo de correo -->
+                <label for="Correo">Correo:</label>
+                <input type="email" id="Correo" name="Correo" required><br>
+                <!-- Campo de edad con restriccion-->
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="99" required><br>
+                <!-- Lista desplegable de género -->
+                <label for="Genero">Genero:</label><br>
+                <select id="Genero" name="Genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="otro">otro</option>
+                </select><br>
+                <!-- Lista de intereses -->
+                <label>Intereses:</label><br>
+
+                <input type="checkbox" id="programacion" name="intereses">Programacion<br>
+                <input type="checkbox" id="videojuegos" name="intereses">Videojuegos<br>
+                <input type="checkbox" id="ensamble_de_figuras" name="intereses">Ensamble de figuras<br>
+                <!-- Aqui estoy creando el area de texto-->
+
+                <label for="comentarios">Comentario:</label><br>
+                <textarea id="comentarios" cols="40" rows="4"> </textarea><br>
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+    </main>
+    <!-- Pie de página con créditos -->
+    <footer>
+        <p>Hecho por Emilio Jose Medrano Cerezo</p>
+        <p>Copyright 2025 - Todos los derechos reservados.</p>
+        <h3> Redes sociales</h3>
+        <a href="https://github.com/emiliomedrano598-lgtm">github</a>
+        <a href="https://www.facebook.com/emilio.medrano.5209">Facebook </a>
+        <a href="https://www.instagram.com/emiliojosemedranog">Instagram </a>
+    </footer>
+
+</body>
+
+</html>
